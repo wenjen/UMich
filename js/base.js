@@ -1,6 +1,9 @@
 function render_side_bar(){
-    alert("render_side_bar");
-    $(side_bar).append("<li><a href=\"index.html\"><i class=\"fa fa-fw fa-dashboard\"></i> Dashboard</a></li>");
-    $(side_bar).append("<li><a href=\"course.html\"><i class=\"fa fa-graduation-cap\"></i> Dashboard</a></li>");
+    //alert("render_side_bar");
+    items=[{link:"index.html",class:"fa fa-fw fa-dashboard",name:"Dashboard"}];
+    items+=[{link:"course.html",class:"fa fa-graduation-cap",name:"Course"}]
+    for (i in items){
+        $(side_bar).append("<li><a href=\""+items[i].link+\"><i class=\""+items[i].class+"\"></i>"+items[i].name+"</a></li>");
+    }
 }
 window.onload=render_side_bar();
