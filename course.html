@@ -150,13 +150,8 @@
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
              
-                <ul class="nav navbar-nav side-nav">
-                    <li class="active">
-                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="course-progress.html"><i class="fa fa-graduation-cap"></i> Courses</a>
-                    </li>
+                <ul id=side_bar class="nav navbar-nav side-nav">
+                    
                 </ul>
             </div> 
             
@@ -166,6 +161,7 @@
         </nav>
 
         <div id="page-wrapper">
+            
 
             <div class="container-fluid">
 
@@ -190,28 +186,63 @@
                 <!-- Main jumbotron for a primary marketing message or call to action -->
                     <p>
                         <a href="https://umich.instructure.com/courses" 
-                        class="btn btn-danger btn-lg" role="button">Canvas &raquo;</a>
+                        class="btn btn-danger btn-lg" role="button">Canvas</a>
                         <a href="https://gradescope.com" 
-                        class="btn btn-info btn-lg" role="button">Gradescope &raquo;</a>
+                        class="btn btn-info btn-lg" role="button">Gradescope</a>
                         <a href="https://www.sharelatex.com/project" 
-                        class="btn btn-warning btn-lg" role="button">ShareLatex &raquo;</a>
+                        class="btn btn-warning btn-lg" role="button">ShareLatex</a>
                         <a href="https://mprint.umich.edu/" 
                         class="btn btn-primary btn-lg" role="button">Mprint</a>
-                        <a href="https://www.overleaf.com/6556553tzqtkb#/22187303/" 
-                        class="btn btn-success btn-lg" role="button">Overleaf</a>
+                        <a href="https://apps.engin.umich.edu/collab-reserve/" 
+                        class="btn btn-success btn-lg" role="button">Viz</a>
                         
 
                     </p>
+                    
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="panel panel-danger">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">EECS 482</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <a href="https://github.com/eecs482" 
+                                        class="btn btn-warning btn" role="button">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">EECS 485</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <p>
+                                        <a href="https://eecs485.org/#schedule"
+                                            class="btn btn-primary btn" role="button">Course site</a>
+                                        <a href="https://gitlab.eecs.umich.edu/NTHU_TY" 
+                                            class="btn btn-warning btn" role="button">Gitlab</a>
+                                        <a href="http://0.0.0.0:3000/2j0u0dsj/p3/" 
+                                            class="btn btn-success btn" role="button">Local site</a>
+                                    </p>
+                                    <p>
+                                        <a href="http://class3.eecs.umich.edu:4775/2j0u0dsj/p3/" 
+                                            class="btn btn-info btn" role="button">Remote site</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 <div class="jumbotron">
                    
 
                    
           
                     <p>
-                    <h1>Requirements</h1>
+            <h1>Requirements</h1>
                       
-The Master’s degree requires a minimum of 30 graduate level credit hours with the following
-distribution:
+                The Master’s degree requires a minimum of 30 graduate level credit hours with the following
+                distribution:
            <p style="margin-left: 40px">
                 ● > 30 graduate level credit hours           
                 <p style="margin-left: 80px"> 
@@ -253,6 +284,8 @@ distribution:
 
                     </p>
                 </div>
+
+                
                 <div class="col-lg-12">
                         <div class="panel panel-default">
                             <div class="panel-heading">
@@ -355,9 +388,10 @@ distribution:
 
     </div>
     <!-- /#wrapper -->
-
+    
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+    <script src="js/base.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
