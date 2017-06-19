@@ -2,6 +2,7 @@ function render_side_bar(){
     //alert("render_side_bar");
     items=[{link:"index.html",class:"fa fa-fw fa-dashboard",name:"Dashboard"}];
     items.push({link:"course.html",class:"fa fa-graduation-cap",name:"Course"});
+    items.push({link:"UW.html",class:"fa fa-clock-o",name:" UW hours"});
     items.push({link:"charts.html",class:"fa fa-fw fa-bar-chart-o",name:"Charts"});
     items.push({link:"tables.html",class:"fa fa-fw fa-table",name:"Tables"});
     items.push({link:"forms.html",class:"fa fa-fw fa-edit",name:"Forms"});
